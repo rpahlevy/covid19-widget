@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>HOME</title>
+
+    <style>
+        .code {
+            background-color: ghostwhite;
+            border: 1px solid grey;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Covid19 Widget</h1>
+
+    <h2>1. Menggunakan Iframe</h2>
+    <pre class="code"><code>
+    &lt;!-- Widget informasi di Indonesia --&gt;
+    &lt;iframe src=&quot;https://covid19-widget.now.sh/id.html&quot;
+        scrolling=&quot;no&quot;
+        allowtransparency=&quot;true&quot;
+        width=&quot;100%&quot; height=&quot;180&quot;
+        frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+    &lt;!-- Widget informasi Global --&gt;
+    &lt;iframe src=&quot;https://covid19-widget.now.sh/global.html&quot;
+        scrolling=&quot;no&quot;
+        allowtransparency=&quot;true&quot;
+        width=&quot;100%&quot; height=&quot;180&quot;
+        frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+</code></pre>
+    <iframe src="id.html" scrolling="no" allowtransparency="true" width="100%" height="180" frameborder="0"></iframe>
+
+    <h2>2. Menggunakan Javascript</h2>
+    <pre class="code"><code>
+    &lt;!-- Container info --&gt;
+    &lt;div id=&quot;covid19-widget&quot;&gt;&lt;/div&gt;
+
+    &lt;!-- Warning! include salah 1 saja, id / global --&gt;
+
+    &lt;!-- Include file js Indonesia --&gt;
+    &lt;script src=&quot;https://covid19-widget.now.sh/js/widget-id.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Include file js Global --&gt;
+    &lt;script src=&quot;https://covid19-widget.now.sh/js/widget-global.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- Init ke dalam container info, menggunakan id nya TANPA # --&gt;
+    &lt;script&gt;
+        initCovid19Info('covid19-widget')
+    &lt;/script&gt;
+
+</code></pre>
+    <div id="covid19-widget"></div>
+    <script src="js/widget-global.js"></script>
+    <script>
+        initCovid19Info('covid19-widget')
+    </script>
+</body>
+
+</html>

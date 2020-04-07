@@ -1,0 +1,45 @@
+.covid19-info__wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.covid19-info__row {
+    display: flex;
+}
+
+.covid19-info__row>.covid19-info__col {
+    flex-grow: 1;
+}
+
+.covid19-info__container {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.covid19-info__total {
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.covid19-info__dirawat {
+    background-color: orange;
+    color: white;
+}
+
+.covid19-info__meninggal {
+    background-color: orangered;
+    color: white;
+}
+
+.covid19-info__sembuh {
+    background-color: limegreen;
+    color: white;
+}
+
+.covid19-info__value {
+    font-weight: bold;
+    font-size: 150%;
+}
